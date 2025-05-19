@@ -9,6 +9,7 @@
 / {
     chosen {
         zmk,kscan = &kscan;
+        zephyr,console = &cdc_acm_uart;
     };
 
     kscan: kscan {
@@ -38,6 +39,15 @@
             ;
     };
 };
+
+&usbd {
+    status = "okay";
+};
+
+&cdc_acm_uart {
+    status = "okay";
+};
+
 
 &right_encoder {
     status = "okay";
