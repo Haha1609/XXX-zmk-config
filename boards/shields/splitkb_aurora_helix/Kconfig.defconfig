@@ -23,6 +23,11 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
 
+# Optional BLE boost:
+config BT_CTLR_TX_PWR_PLUS_8
+    default y
+
+
 endif
 
 
