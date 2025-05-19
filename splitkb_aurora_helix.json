@@ -2,8 +2,10 @@
   "keyboardName": "Aurora Helix",
   "url": "https://github.com/Haha1609/aurora-helix-zmk-config",
   "maintainer": "Haha1609",
+  "id": "Aurora_Helix", 
   "layouts": {
-    "LAYOUT": {
+    "default_layout": {              // Can use custom layout name
+      "name": "6-Row Layout",        // Human-readable name
       "layout": [
 { "row": 0, "col":  0, "x":   0, "y":  0, "label":  "0\n0" },
 { "row": 0, "col":  1, "x":   1, "y":  0, "label":  "0\n1" },
