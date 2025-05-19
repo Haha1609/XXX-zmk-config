@@ -23,9 +23,7 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
 
-# Optional BLE boost:
-config BT_CTLR_TX_PWR_PLUS_8
-    default y
+
 
 
 endif
@@ -45,12 +43,14 @@ config ZMK_BLE
 config ZMK_SLEEP
     default y
 
-config BT_CTLR_TX_PWR_PLUS_8
-    default y
 
 config ZMK_RGB_UNDERGLOW
+    default y
     select WS2812_STRIP
     select SPI
+
+config ZMK_RGB_UNDERGLOW_BRT_MAX
+    default 50
 
 if ZMK_DISPLAY
 
