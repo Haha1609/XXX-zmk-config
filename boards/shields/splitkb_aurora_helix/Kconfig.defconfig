@@ -31,6 +31,18 @@ if SHIELD_SPLITKB_AURORA_HELIX_LEFT || SHIELD_SPLITKB_AURORA_HELIX_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_USB
+    default y
+
+config ZMK_BLE
+    default y
+
+config ZMK_SLEEP
+    default y
+
+config BT_CTLR_TX_PWR_PLUS_8
+    default y
+
 config ZMK_RGB_UNDERGLOW
     select WS2812_STRIP
     select SPI
